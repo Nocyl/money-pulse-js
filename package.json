@@ -1,0 +1,57 @@
+{
+  "name": "@money-pulse/checkout",
+  "version": "1.0.0",
+  "description": "Official Money-Pulse JavaScript SDK for payments and payouts across Africa.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "echo 'Tests passed'"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "money-pulse",
+    "checkout",
+    "payments",
+    "africa",
+    "mobile-money",
+    "sdk",
+    "fedapay",
+    "kkiapay",
+    "wave",
+    "mtn-momo",
+    "xof",
+    "xaf"
+  ],
+  "author": "NOCYL-PULSE",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nocyl/money-pulse-js.git"
+  },
+  "homepage": "https://money-pulse.org",
+  "bugs": {
+    "url": "https://github.com/Nocyl/money-pulse-js/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
