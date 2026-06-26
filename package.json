@@ -1,6 +1,6 @@
 {
   "name": "@money-pulse/checkout",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Official Money-Pulse JavaScript SDK for payments and payouts across Africa.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,6 +17,7 @@
   ],
   "scripts": {
     "build": "tsc",
+    "build:cdn": "vite build && cp dist/checkout.iife.js dist/checkout.js",
     "prepublishOnly": "npm run build",
     "test": "echo 'Tests passed'"
   },
@@ -52,6 +53,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "typescript": "^5.5.0"
+    "typescript": "^5.5.0",
+    "vite": "^5.4.0"
   }
 }
